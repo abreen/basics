@@ -13,5 +13,6 @@ import java.util.NoSuchElementException;
 public interface Dictionary<Key, Value> {
     public boolean add(Key k, Value v);
     public void remove(Key k) throws NoSuchElementException;
+    public boolean hasKey(Key k);
     public Value get(Key k) throws NoSuchElementException;
 }

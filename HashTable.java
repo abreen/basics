@@ -147,6 +147,10 @@ public class HashTable<Key, Value> implements Dictionary<Key, Value> {
         }
     }
     
+    public boolean hasKey(Key k) {
+        return indexOf(k) != -1;
+    }
+
     public Value get(Key k) throws NoSuchElementException {
         int index = indexOf(k);
         
